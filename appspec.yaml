@@ -3,8 +3,8 @@ Resources:
   -TargetService:
     Type: AWS::ECS::Service
     Properties:
-      TaskDefinition: "arn:aws:ecs:us-east-1:610018615348:task-definition/malhar-pms:1"
+      TaskDefinition: "arn:aws:ecs:ap-south-1:610018615348:task-definition/authorization:1"
       LoadBalancerInfo:
-        ContainerName: "malhar-pms"
+        ContainerName: "authorization"
         ContainerPort: "8081"
       PlatformVersion: "Latest"
